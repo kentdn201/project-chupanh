@@ -6,6 +6,10 @@
 
         <title>WIN Wedding Concept Studio</title>
 
+        <link rel = "icon" href =
+        "https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/260321085_109223941605322_3404971612883187929_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zKYtrD1-oPsAX_yOhRg&_nc_ht=scontent-hkt1-2.xx&oh=00_AT85jXRZh16KbuPCDECSLQRURax_4K6sRiVdpi2M9-R-pA&oe=6338FB41"
+                type = "image/x-icon">
+
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
