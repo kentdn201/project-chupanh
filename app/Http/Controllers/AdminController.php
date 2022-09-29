@@ -49,11 +49,6 @@ class AdminController extends Controller
 
     public function customers()
     {
-        if(auth()->user()?->username != 'thang23494')
-        {
-            abort(Response::HTTP_FORBIDDEN);
-        }
-
         return view('admins.khach-hang', [
             'customers' => Customer::latest()->filter(
                 request(['search'])
@@ -63,11 +58,6 @@ class AdminController extends Controller
 
     public function addCustomer()
     {
-        if(auth()->user()?->username != 'thang23494')
-        {
-            abort(Response::HTTP_FORBIDDEN);
-        }
-
         return view('admins.addCustomer', [
             'categories' => Category::all()
         ]);
@@ -215,11 +205,6 @@ class AdminController extends Controller
     // Danh Mục: Category
     public function categories()
     {
-        if(auth()->user()?->username != 'thang23494')
-        {
-            abort(Response::HTTP_FORBIDDEN);
-        }
-
         return view('admins.danh-muc', [
             'customers' => Customer::all(),
             'categories' => Category::all()

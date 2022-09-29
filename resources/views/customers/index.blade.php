@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/homepage/homepage.css">
 
-@auth
+@admin
     @include('admins.index')
 @else
 <x-layout>
@@ -32,7 +32,5 @@
         @else
         <h3 class="text-center">Hiện tại chưa có bộ ảnh nào vui lòng quay lại vào lúc khác!</h3>
         @endif
-    @endauth
 </x-layout>
-
-
+@endadmin
