@@ -63,6 +63,6 @@ Route::patch('/admin/danh-muc/{category}/edit', [AdminController::class, 'update
 
 Route::delete('admin/danh-muc/{category}', [AdminController::class, 'destroyCategory'])->middleware('auth');
 
-Route::get('/admin/carousel/', [AdminController::class, 'showCarousel'])->middleware('auth');
-Route::post('/admin/carousel/', [AdminController::class, 'storeCarousel'])->middleware('auth');
+Route::get('/admin/carousels/', [AdminController::class, 'showCarousel'])->middleware('auth');
+Route::post('/admin/carousels/', [AdminController::class, 'storeCarousel'])->middleware('auth');
 Route::delete('admin/carousel/{carousel}', [AdminController::class, 'destroyCarousel'])->middleware('auth');

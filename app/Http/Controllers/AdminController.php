@@ -285,7 +285,7 @@ class AdminController extends Controller
     }
 
     // Thêm Carousel
-    public function storeCarousel1()
+    public function storeCarousel()
     {
         // dd(request()->all());
         $path = 'carousel';
