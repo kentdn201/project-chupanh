@@ -27,10 +27,10 @@
         <div class="w3-bar-block">
             <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
             <a href="/" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dashboard fa-fw"></i>  Tổng Quan</a>
-            <a href="/admin/khach-hang" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Khách Hàng</a>
-            <a href="/admin/danh-muc" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Danh Mục</a>
-            <a href="/admin/carousel" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Carousel</a>
-            <a href="/admin/lien-he" class="w3-bar-item w3-button w3-padding"><i class="fa fa-phone fa-fw"></i>  Liên Hệ </a>
+            <a href="/admin/khach-hang" class="w3-bar-item w3-button w3-padding {{ request()->is('/') ? 'w3-blue' : ''}}"><i class="fa fa-users fa-fw"></i>  Khách Hàng</a>
+            <a href="/admin/danh-muc" class="w3-bar-item w3-button w3-padding {{ request()->is('/admin/khach-hang') ? 'w3-blue' : ''}}"><i class="fa fa-users fa-fw"></i>  Danh Mục</a>
+            <a href="/admin/carousel" class="w3-bar-item w3-button w3-padding {{ request()->is('/admin/danh-muc') ? 'w3-blue' : ''}}"><i class="fa fa-users fa-fw"></i>  Carousel</a>
+            <a href="/admin/lien-he" class="w3-bar-item w3-button w3-padding {{ request()->is('/admin/carousel') ? 'w3-blue' : ''}}"><i class="fa fa-phone fa-fw"></i>  Liên Hệ </a>
             <form action="/logout" method="post">
                 @csrf
                 <button class="w3-bar-item w3-button w3-padding" onclick="notification()" type="submit"><i class="fa fa-arrow-left"></i>  Đăng xuất</button>
