@@ -1,0 +1,15 @@
+.header-top-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 40%;
+    text-align: right;
+    text-transform: uppercase;
+}

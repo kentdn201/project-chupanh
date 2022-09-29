@@ -1,0 +1,22 @@
+.footer-page {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .footer-title::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }

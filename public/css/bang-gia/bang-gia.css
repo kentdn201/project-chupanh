@@ -1,0 +1,14 @@
+.main-body {
+    text-align: justify;
+    line-height: 28px;
+}
+
+.main-body .main-picture .img{
+    display: block;
+    width: 720px;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
