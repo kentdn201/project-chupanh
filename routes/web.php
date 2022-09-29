@@ -34,35 +34,37 @@ Route::post('lien-he', [CustomerController::class, 'store'])->middleware('guest'
 Route::get('admin', [AdminController::class, 'loginPage'])->middleware('guest');
 Route::post('admin', [AdminController::class, 'store'])->middleware('guest');
 
-Route::post('logout', [AdminController::class, 'logout'])->middleware('can:admin');
+Route::middleware('can:admin')->group(function () {
+    Route::post('logout', [AdminController::class, 'logout']);
 
-Route::get('/admin/khach-hang', [AdminController::class, 'customers'])->middleware('can:admin');
+    Route::get('/admin/khach-hang', [AdminController::class, 'customers']);
 
-Route::get('/admin/khach-hang/them-moi', [AdminController::class, 'addCustomer'])->middleware('can:admin');
-Route::post('/admin/khach-hang/them-moi', [AdminController::class, 'storeCustomer'])->middleware('can:admin');
+    Route::get('/admin/khach-hang/them-moi', [AdminController::class, 'addCustomer']);
+    Route::post('/admin/khach-hang/them-moi', [AdminController::class, 'storeCustomer']);
 
-Route::get('/admin/lien-he', [AdminController::class, 'lienHeAdmin'])->middleware('can:admin');
-Route::delete('admin/contact/{contact}', [AdminController::class, 'destroyContact'])->middleware('can:admin');
+    Route::get('/admin/lien-he', [AdminController::class, 'lienHeAdmin']);
+    Route::delete('admin/contact/{contact}', [AdminController::class, 'destroyContact']);
 
-Route::get('/admin/khach-hang/{customer:slug}', [AdminController::class, 'showOne'])->middleware('can:admin');
-Route::post('/admin/khach-hang/{customer:slug}', [AdminController::class, 'storeImage'])->middleware('can:admin');
+    Route::get('/admin/khach-hang/{customer:slug}', [AdminController::class, 'showOne']);
+    Route::post('/admin/khach-hang/{customer:slug}', [AdminController::class, 'storeImage']);
 
-Route::get('/admin/khach-hang/{customer}/edit', [AdminController::class, 'showCustomer'])->middleware('can:admin');
-Route::patch('/admin/khach-hang/{customer}', [AdminController::class, 'update'])->middleware('can:admin');
+    Route::get('/admin/khach-hang/{customer}/edit', [AdminController::class, 'showCustomer']);
+    Route::patch('/admin/khach-hang/{customer}', [AdminController::class, 'update']);
 
-Route::delete('admin/khach-hang/{customer}', [AdminController::class, 'destroy'])->middleware('can:admin');
-Route::delete('admin/image/{image}', [AdminController::class, 'destroyImage'])->middleware('can:admin');
+    Route::delete('admin/khach-hang/{customer}', [AdminController::class, 'destroy']);
+    Route::delete('admin/image/{image}', [AdminController::class, 'destroyImage']);
 
-Route::get('/admin/danh-muc', [AdminController::class, 'categories'])->middleware('can:admin');
+    Route::get('/admin/danh-muc', [AdminController::class, 'categories']);
 
-Route::get('/admin/danh-muc/them-moi', [AdminController::class, 'addNewCategoryPage'])->middleware('can:admin');
-Route::post('/admin/danh-muc/them-moi', [AdminController::class, 'storeCategory'])->middleware('can:admin');
+    Route::get('/admin/danh-muc/them-moi', [AdminController::class, 'addNewCategoryPage']);
+    Route::post('/admin/danh-muc/them-moi', [AdminController::class, 'storeCategory']);
 
-Route::get('/admin/danh-muc/{category}/edit', [AdminController::class, 'editCategoryPage'])->middleware('can:admin');
-Route::patch('/admin/danh-muc/{category}/edit', [AdminController::class, 'updateCategory'])->middleware('can:admin');
+    Route::get('/admin/danh-muc/{category}/edit', [AdminController::class, 'editCategoryPage']);
+    Route::patch('/admin/danh-muc/{category}/edit', [AdminController::class, 'updateCategory']);
 
-Route::delete('admin/danh-muc/{category}', [AdminController::class, 'destroyCategory'])->middleware('can:admin');
+    Route::delete('admin/danh-muc/{category}', [AdminController::class, 'destroyCategory']);
 
-Route::get('/admin/carousel/', [AdminController::class, 'showCarousel'])->middleware('can:admin');
-Route::post('/admin/carousel/', [AdminController::class, 'storeCarousel'])->middleware('can:admin');
-Route::delete('admin/carousel/{carousel}', [AdminController::class, 'destroyCarousel'])->middleware('can:admin');
+    Route::get('/admin/carousel/', [AdminController::class, 'showCarousel']);
+    Route::post('/admin/carousel/', [AdminController::class, 'storeCarousel']);
+    Route::delete('admin/carousel/{carousel}', [AdminController::class, 'destroyCarousel']);
+});
