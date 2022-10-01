@@ -9,7 +9,7 @@
                     <div class="border-row"></div>
                 </div>
                 <div class="footer-body">
-                    <p>HOTLINE: 09878654129</p>
+                    <p>HOTLINE: 0961230494</p>
                     <p>Địa Chỉ: Số 1, Ngõ 191, Thạch Bàn, Long Biên, Hà Nội</p>
                     <p>EMAIL: Winwedding.media@gmail.com</p>
                 </div>
