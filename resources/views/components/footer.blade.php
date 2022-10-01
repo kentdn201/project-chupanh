@@ -10,8 +10,8 @@
                 </div>
                 <div class="footer-body">
                     <p>HOTLINE: 09878654129</p>
-                    <p>Địa Chỉ: Ngõ 191, Thạch Bàn, Long Biên, Hà Nội</p>
-                    <p>EMAIL: abc@gmail.com</p>
+                    <p>Địa Chỉ: Số 1, Ngõ 191, Thạch Bàn, Long Biên, Hà Nội</p>
+                    <p>EMAIL: Winwedding.media@gmail.com</p>
                 </div>
             </div>
             <div class="col mr-3">

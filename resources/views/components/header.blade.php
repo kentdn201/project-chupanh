@@ -7,9 +7,7 @@
                     <a href="/"><img src="/images/logo-trang-chu.png" width="64" height="64" alt="logo-trang-chu"></a>
                 </div>
                 <div class="right">
-                    Số điện thoại: 0989213412
-                    <br/>
-                    Số điện thoại: 0975628371
+                    Số điện thoại: 0961230494
                 </div>
             </div>
     </section>
