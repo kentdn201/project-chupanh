@@ -92,7 +92,7 @@ class AdminController extends Controller
     public function lienHeAdmin()
     {
         return view('admins.lien-he-admin', [
-            'contacts' => Contact::all()
+            'contacts' => Contact::paginate(9)
         ]);
     }
 
@@ -207,7 +207,7 @@ class AdminController extends Controller
     {
         return view('admins.danh-muc', [
             'customers' => Customer::all(),
-            'categories' => Category::all()
+            'categories' => Category::paginate(9)
         ]);
     }
 
@@ -272,9 +272,7 @@ class AdminController extends Controller
     // Thêm Carousel
     public function storeCarousel()
     {
-        // dd(request()->all());
         $path = 'carousel';
-
         $images=array();
         if($files=request()->file('name')){
             foreach($files as $file){
@@ -286,7 +284,7 @@ class AdminController extends Controller
 
         foreach($images as $image)
         {
-            Carousel::insert( [
+            Carousel::create( [
                 'name'=>  $image,
             ]);
         }

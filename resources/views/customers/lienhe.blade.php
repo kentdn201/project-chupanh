@@ -8,9 +8,9 @@
                     <div class="col-12 col-md-12 col-lg-6">
                         <div>
                             <h4>Thông Tin Liên Hệ Khác Liên Quan</h4>
-                            <p>Địa Chỉ: ABC, ABC 123, Hà Nội</p>
-                            <p>SĐT: 097655239811</p>
-                            <p>Email: win@gmail.com</p>
+                            <p>Địa Chỉ: Số 1, Ngõ 191, Thạch Bàn, Long Biên, Hà Nội</p>
+                            <p>SĐT: 0961230494</p>
+                            <p>Email: Winwedding.media@gmail.com</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-12 col-lg-6 mt-4 mt-lg-0">

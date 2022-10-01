@@ -61,4 +61,5 @@
         </tbody>
       </table>
       {{-- Pagination --}}
+      {{$contacts->links()}}
 </x-layout-admin>

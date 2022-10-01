@@ -55,4 +55,6 @@
             @endforeach
         </tbody>
       </table>
+        {{-- Pagination --}}
+        {{$categories->links()}}
 </x-layout-admin>
